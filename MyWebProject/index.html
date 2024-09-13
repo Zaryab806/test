@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="showSection('location')">Location</button>
+            <button onclick="showSection('tos')">Terms of Service</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="location" class="content">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        
+        <section id="tos" class="content">
+            <h2>Terms of Service</h2>
+            <p>Terms of Service content goes here...</p>
+        </section>
+        
+        <section id="contact" class="content">
+            <h2>Contact</h2>
+            <p>Email: example@example.com</p>
+            <p>Phone: +1234567890</p>
+        </section>
+    </main>
+
+    <!-- Link to JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>
